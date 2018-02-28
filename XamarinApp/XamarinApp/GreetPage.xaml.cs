@@ -1,6 +1,4 @@
-﻿using System;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace XamarinApp
@@ -11,11 +9,20 @@ namespace XamarinApp
         public GreetPage()
         {
             InitializeComponent();
-        }
+            slider.Value = 0.5;
 
-        private void Handle_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Title", "Hello World", "OK");
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    Padding = new Thickness(0, 20, 0, 0);
+                    break;
+                case Device.Android:
+                    Padding = new Thickness(0, 0, 0, 0);
+                    break;
+                default:
+                    Padding = new Thickness(0, 0, 0, 0);
+                    break;
+            }
         }
     }
 }

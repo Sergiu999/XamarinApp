@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.QuotesPage">
+    <ContentPage.Content>
+        <StackLayout Padding="0, 20, 0, 0" BindingContext="{x:Reference slider}">
+            <Button Text="Name" Clicked="Button_OnClicked"></Button>
+            <Label Text="{Binding Value, StringFormat='Font-Size: {0:N0}'}"/>
+            <Slider x:Name="slider"/>
+            <Label x:Name="CurrentQuote" FontSize="{Binding Value, StringFormat='{0:N0}'}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
