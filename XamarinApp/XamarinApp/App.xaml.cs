@@ -1,6 +1,6 @@
 ﻿
 using Xamarin.Forms;
-using XamarinApp.RelativeLayourExercise;
+using XamarinApp.SectionImage;
 
 namespace XamarinApp
 {
@@ -10,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new RelativeExercise();
+            MainPage = new ImagePage();
         }
 
         protected override void OnStart()
