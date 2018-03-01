@@ -1,5 +1,6 @@
 ﻿
 using Xamarin.Forms;
+using XamarinApp.RelativeLayourExercise;
 
 namespace XamarinApp
 {
@@ -9,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new QuotesPage();
+            MainPage = new RelativeExercise();
         }
 
         protected override void OnStart()

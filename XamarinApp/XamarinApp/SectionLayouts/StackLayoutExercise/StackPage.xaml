@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0, 20, 0, 0"
+             BackgroundColor="#127ac7"
+             Title="Welcome Page"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.StackPage">
+    <StackLayout VerticalOptions="Center">
+        <Label Text="Welcome to Hernia" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White"/>
+        <Label Text="Cross-platform apps made easy" HorizontalOptions="Center" TextColor="White"/>
+        <Button Text="Login" BackgroundColor="#1dabf0" TextColor="White"/>
+        <Button Text="Register" BackgroundColor="#1dabf0" TextColor="White"/>
+    </StackLayout>
+</ContentPage>
