@@ -1,6 +1,6 @@
 ﻿
 using Xamarin.Forms;
-using XamarinApp.SectionImage;
+using XamarinApp.SectionLists;
 
 namespace XamarinApp
 {
@@ -10,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new ImagePage();
+            MainPage = new ListExercise();
         }
 
         protected override void OnStart()
