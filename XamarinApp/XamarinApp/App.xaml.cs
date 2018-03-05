@@ -1,6 +1,6 @@
 ﻿
 using Xamarin.Forms;
-using XamarinApp.SectionLists;
+using XamarinApp.SectionNavigation.Exercise;
 
 namespace XamarinApp
 {
@@ -10,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new ListExercise();
+            MainPage = new NavigationPage(new WilkomenPage());
         }
 
         protected override void OnStart()
