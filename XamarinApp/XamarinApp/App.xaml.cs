@@ -1,6 +1,6 @@
 ﻿
 using Xamarin.Forms;
-using XamarinApp.SectionNavigation.Exercise;
+using XamarinApp.FormsSection.Exercise;
 
 namespace XamarinApp
 {
@@ -10,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new WilkomenPage());
+            MainPage = new NavigationPage(new ContactsPage());
         }
 
         protected override void OnStart()

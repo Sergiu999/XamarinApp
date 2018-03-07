@@ -18,7 +18,7 @@ namespace XamarinApp
             slider.Minimum = 16;
         }
 
-        private string[] _quotes = {
+        private readonly string[] _quotes = {
             "fraza1",
             "fraza2",
             "fraza3"
