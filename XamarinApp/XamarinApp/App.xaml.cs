@@ -1,6 +1,6 @@
 ﻿
 using Xamarin.Forms;
-using XamarinApp.FormsSection.Exercise;
+using XamarinApp.DataAccessSection.Exercise;
 
 namespace XamarinApp
 {
@@ -10,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new ContactsPage());
+            MainPage = new NavigationPage(new MoviesPage());
         }
 
         protected override void OnStart()
@@ -26,6 +26,22 @@ namespace XamarinApp
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+
+        private const string TitleKey = "Name";
+        private const string NotificationsEnabledKey = "NotificationsEnabled";
+
+        public string Title
+        {
+            get => Properties.ContainsKey(TitleKey) ? Properties[TitleKey].ToString() : "";
+            set => Properties[TitleKey] = value;
+        }
+
+        public bool NotificationsEnabled
+        {
+            get => Properties.ContainsKey(NotificationsEnabledKey) && (bool)Properties[NotificationsEnabledKey];
+            set => Properties[NotificationsEnabledKey] = value;
         }
     }
 }
