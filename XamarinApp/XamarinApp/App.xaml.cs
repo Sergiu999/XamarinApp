@@ -1,6 +1,6 @@
 ﻿
 using Xamarin.Forms;
-using XamarinApp.DataAccessSection.Exercise;
+using XamarinApp.SectionMVVM;
 
 namespace XamarinApp
 {
@@ -10,7 +10,7 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MoviesPage());
+            MainPage = new NavigationPage(new PlaylistsPage());
         }
 
         protected override void OnStart()
